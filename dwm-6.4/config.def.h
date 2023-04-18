@@ -13,11 +13,12 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
+static const char col_purp1[]       = "#1d1f21";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_purp1,  col_cyan  },
 };
 
 /* tagging */
@@ -62,8 +63,8 @@ static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 //static const char *light_down[] = { "/home/lushuangning/arch-backup/script/light_down.sh", NULL };
 //static const char *light_up[] = { "/home/lushuangning/arch-backup/script/light_up.sh", NULL };
-static const char *sound_down[] = { "/home/lushuangning/arch-backup/script/sound_down.sh", NULL };
-static const char *sound_up[] = { "/home/lushuangning/arch-backup/script/sound_up.sh", NULL };
+static const char *sound_down[] = { "/home/lushuangning/arch-backup/dwm-6.4/scripts/sound_down.sh", NULL };
+static const char *sound_up[] = { "/home/lushuangning/arch-backup/dwm-6.4/scripts/sound_up.sh", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
